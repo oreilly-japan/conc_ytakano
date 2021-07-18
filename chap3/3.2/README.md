@@ -1,9 +1,10 @@
-# 3.2.1 Compare and Swap
+# 3.2 アトミック命令
 
 # ファイル
 
-- 3_2_1_compare_and_swap_1.c: p57のコード
-- 3_2_1_compare_and_swap_2.c: p58のコード
+- 3_2_1_cas_1.c: p57
+- 3_2_1_cas_2.c: p58
+- 3_2_2_tas.c: p61
 
 ## アセンブリファイル生成
 
@@ -12,5 +13,5 @@ makeを実行すると、.sファイルが生成されます。
 ```sh
 $ make
 $ ls *.s
-3_2_1_compare_and_swap_1.s  3_2_1_compare_and_swap_2.s
+3_2_1_cas_1.s  3_2_1_cas_2.s  3_2_2_tas.s
 ```

@@ -2,10 +2,10 @@
 
 # ファイル
 
-- 2_2_1_1_pthreads_1.c: p20のコード
-- 2_2_1_2_pthreads_2.c: p22のコード
-- 2_2_2_wo_volatile.c: p24上のコード
-- 2_2_2_volatile.c: p24下のコード
+- 2_2_1_1_pthreads_1.c: p20
+- 2_2_1_2_pthreads_2.c: p22
+- 2_2_2_wo_volatile.c: p24上
+- 2_2_2_volatile.c: p24下
 
 ## コンパイル or アセンブリファイル生成
 

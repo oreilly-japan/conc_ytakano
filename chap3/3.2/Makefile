@@ -1,4 +1,4 @@
-cas = 3_2_1_compare_and_swap_1.s 3_2_1_compare_and_swap_2.s
+cas = 3_2_1_cas_1.s 3_2_1_cas_2.s 3_2_2_tas.s
 
 all: $(cas)
 

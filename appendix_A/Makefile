@@ -1,10 +1,7 @@
 all: fizzbuzz
 
-fizzbuzz: fizzbuzz.o
-	ld fizzbuzz.o -o fizzbuzz
-
-fizzbuzz.o: fizzbuzz.S
-	as fizzbuzz.S -o fizzbuzz.o
+fizzbuzz: fizzbuzz.S
+	clang -nostdlib fizzbuzz.S -o fizzbuzz
 
 clean:
-	rm -f *.o fizzbuzz
+	rm -f fizzbuzz

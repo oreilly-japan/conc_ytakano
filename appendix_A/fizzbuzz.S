@@ -16,7 +16,7 @@ _start: ; <3>
     mov    x8, #93 ; exit
     svc    #0
 
-FizzBuzz: // <7>
+FizzBuzz: ; <7>
     stp    x19, x20, [sp, #-16]!
 
     ; if x0 % 15 == 0 then go to .LFB <8>

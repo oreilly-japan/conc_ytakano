@@ -305,7 +305,7 @@ pub fn recv() -> Option<u64> {
             return Some(msg);
         }
 
-        // 実行可能なスレッドが他にいない場合はデッドロック <1>
+        // 実行可能なスレッドが他にいない場合はデッドロック
         if CONTEXTS.len() == 1 {
             panic!("deadlock");
         }

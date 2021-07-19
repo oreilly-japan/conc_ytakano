@@ -10,7 +10,7 @@ pub struct MCSLock<T> { // <1>
 
 pub struct MCSNode<T> { // <2>
     next: AtomicPtr<MCSNode<T>>, // 次のノード
-    locked: AtomicBool,          // trueなロック獲得中
+    locked: AtomicBool,          // trueならロック獲得中
 }
 
 pub struct MCSLockGuard<'a, T> {

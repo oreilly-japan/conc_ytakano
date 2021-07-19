@@ -50,7 +50,7 @@ impl<T> FairLock<T> {
                 break;
             }
 
-            // 共有変数を用いてロック確保を試みる <6>
+            // 共有変数を用いてロック獲得を試みる <6>
             if !self.lock.load(Ordering::Relaxed) {
                 if let Ok(_) = self.lock.compare_exchange_weak(
                     false, // falseなら

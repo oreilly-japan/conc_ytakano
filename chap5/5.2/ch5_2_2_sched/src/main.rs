@@ -52,7 +52,7 @@ impl Future for Hello {
 struct Task {
     // 実行するコルーチン
     future: Mutex<BoxFuture<'static, ()>>, // <1>
-    // Executerへスケジューリングするためのチャネル
+    // Executorへスケジューリングするためのチャネル
     sender: SyncSender<Arc<Task>>, // <2>
 }
 
@@ -64,17 +64,17 @@ impl ArcWake for Task {
     }
 }
 
-struct Executer { // <1>
+struct Executor { // <1>
     // 実行キュー
     sender: SyncSender<Arc<Task>>,
     receiver: Receiver<Arc<Task>>,
 }
 
-impl Executer {
+impl Executor {
     fn new() -> Self {
         // チャネルを生成。キューのサイズは最大1024個
         let (sender, receiver) = sync_channel(1024);
-        Executer {
+        Executor {
             sender: sender.clone(),
             receiver,
         }
@@ -118,18 +118,18 @@ impl Spawner {
 }
 
 fn main() {
-    let executer = Executer::new();
-    executer.get_spawner().spawn(Hello::new());
-    executer.run();
+    let executor = Executor::new();
+    executor.get_spawner().spawn(Hello::new());
+    executor.run();
 }
 
 // 5.3.1で示すように、以下のようにしても実行可能
 // fn main() {
-//     let executer = Executer::new();
+//     let executor = Executor::new();
 //     // asyncでFutureトレイトを実装した型の値に変換
-//     executer.get_spawner().spawn(async {
+//     executor.get_spawner().spawn(async {
 //         let h = Hello::new();
 //         h.await; // pollを呼び出し実行
 //     });
-//     executer.run();
+//     executor.run();
 // }

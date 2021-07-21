@@ -14,6 +14,8 @@ makeを実行すると、.oファイル、または実行ファイルが生成�
 $ make
 $ ls *.o
 3_4_1_semaphore_llsc.o  3_4_semaphore.o
-$ ls 3_4_2_posix_semaphore
-3_4_2_posix_semaphore*
+$ ls 3_4_semaphore 3_4_semaphore_llsc 3_4_2_posix_semaphore
+3_4_2_posix_semaphore* 3_4_semaphore*         3_4_semaphore_llsc*
 ```
+
+各実行ファイルを実行するとテストが行われます。

@@ -2,7 +2,8 @@
 
 ## ファイル
 
-- 3_4_semaphore.c: p70, p71上
+- 3_4_semaphore.c: p70 + セマフォのテストコード（書籍には記載なし）
+- 3_4_semaphore_llsc.c: LL/SC版セマフォのテストコード（書籍には記載なし）
 - 3_4_1_semaphore_llsc.S: p71下
 - 3_4_2_posix_semaphore.c: p72
 

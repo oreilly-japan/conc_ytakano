@@ -1,6 +1,6 @@
 targets = 2_2_1_1_pthreads_1 2_2_1_2_pthreads_2 2_2_2_wo_volatile.s 2_2_2_volatile.s
 CFLAGS = -O3
-LDFLAGS = -lpthread
+LDFLAGS = -pthread
 
 all: $(targets)
 

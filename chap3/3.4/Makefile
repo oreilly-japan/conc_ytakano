@@ -1,6 +1,6 @@
 targets = 3_4_semaphore 3_4_semaphore_llsc.o 3_4_1_semaphore_llsc.o 3_4_2_posix_semaphore 3_4_semaphore_llsc
 CFLAGS = -O3
-LDFLAGS = -lpthread
+LDFLAGS = -pthread
 
 all: $(targets)
 

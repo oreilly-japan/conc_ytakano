@@ -4,7 +4,7 @@ targets = 3_7_1_rwlock_spin.o 3_7_2_rwlock_pthreads \
 	3_7_3_performance_MUTEX \
 	3_7_3_performance_EMPTY
 CFLAGS = -O3
-LDFLAGS = -lpthread
+LDFLAGS = -pthread
 
 # 以下の値を変更して再コンパイルすると、ソースコード中の値も変更される
 NUM_THREAD = 4

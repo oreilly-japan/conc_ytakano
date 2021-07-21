@@ -1,6 +1,6 @@
 targets = signal_c
 CFLAGS = -O3
-LDFLAGS = -lpthread
+LDFLAGS = -pthread
 
 all: $(targets)
 

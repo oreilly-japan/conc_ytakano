@@ -1,6 +1,6 @@
 targets = reent
 CFLAGS = -O3 -DNUM_THREADS=4
-LDFLAGS = -lpthread
+LDFLAGS = -pthread
 
 all: $(targets)
 

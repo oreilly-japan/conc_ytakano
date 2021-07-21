@@ -1,4 +1,6 @@
 #include <pthread.h> // <1>
+#include <fcntl.h>
+#include <sys/stat.h>
 #include <semaphore.h>
 #include <stdio.h>
 #include <stdlib.h>

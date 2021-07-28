@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch8_4_7_barrier
-$ cargo run -release
+$ cargo run --release
 ```

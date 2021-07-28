@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch7_2_stm
-$ cargo run -release
+$ cargo run --release
 ```

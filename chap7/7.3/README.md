@@ -5,9 +5,9 @@
 
 ## コンパイルと実行例
 
-以下のようにディレクトリに移動後実行。AArch64環境のみ実行可能です。
+以下のようにディレクトリに移動後実行。AArch64環境のみ実行可能です。インラインアセンブリを利用しているため、nightlyのみ対応です。
 
 ```sh
 $ cd ch7_3_lockfree
-$ cargo run -release
+$ cargo +nightly run --release
 ```

@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch5_4_tokio
-$ cargo run -release
+$ cargo run --release
 ```

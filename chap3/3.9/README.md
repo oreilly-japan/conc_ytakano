@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch3_9_bakery
-$ cargo run -release
+$ cargo run --release
 ```

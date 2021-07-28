@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch4_3_banker
-$ cargo run -release
+$ cargo run --release
 ```

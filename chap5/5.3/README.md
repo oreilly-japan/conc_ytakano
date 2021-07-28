@@ -5,9 +5,9 @@
 
 ## コンパイルと実行例
 
-以下のようにディレクトリに移動後実行。
+以下のようにディレクトリに移動後実行。epollを利用しているため、Linuxのみ対象です。
 
 ```sh
 $ cd ch5_3_2_ioselect
-$ cargo run -release
+$ cargo run --release
 ```

@@ -11,5 +11,5 @@
 
 ```sh
 $ cd ch4_1_philosophers
-$ cargo run -release
+$ cargo run --release
 ```

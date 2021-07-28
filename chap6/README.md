@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch6_mult
-$ cargo run -release
+$ cargo run --release
 ```

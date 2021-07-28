@@ -9,5 +9,5 @@
 
 ```sh
 $ cd ch7_1_1_fairlock
-$ cargo run -release
+$ cargo run --release
 ```

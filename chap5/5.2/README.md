@@ -9,7 +9,7 @@
 
 ```sh
 $ cd ch5_2_1_hello
-$ cargo run -release
+$ cargo run --release
 ```
 
 ## hello.py

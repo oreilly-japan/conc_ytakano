@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
         if (pthread_join(v[i], (void **)&ptr) == 0) {
             printf("msg = %s\n", ptr);
         } else {
-            perror("pthread_create");
+            perror("pthread_join");
             return -1;
         }
     }

@@ -6,7 +6,7 @@ void barrier(volatile int *cnt, int max) { // <1>
     while (*cnt < max); // <3>
 }
 
-volatile int num = 10; // 共有変数
+volatile int num = 0; // 共有変数
 
 void *worker(void *arg) { // スレッド用関数
     barrier(&num, 10); // 全スレッドがここまで到達するまで待つ <1>

@@ -17,7 +17,7 @@
 | 2章。P.52。2つ目のソースコードの下から2行目。| `spawn(hello).join();` | `spawn(h).join();` |
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
 | 3章。P.64。下段の1行目。| MUTtual EXecution | MUTual EXclusion |
-| 3章。P.67。図3-2。| ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
+| 3章。P.62。図3-2。| ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |
 | 4章。P.133。中段の4行目。 | 一方行 | 一方向 |
 | 4章。P.139。7行目。 | このように書いてしてしまうと | このように書いてしまうと |

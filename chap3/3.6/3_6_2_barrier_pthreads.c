@@ -10,7 +10,7 @@ void barrier(volatile int *cnt, int max) {
         perror("pthread_mutex_lock"); exit(-1);
     }
 
-    *cnt++; // <1>
+    (*cnt)++; // <1>
 
     if (*cnt == max) { // <2>
         // 全プロセスが揃ったので通知 <3>

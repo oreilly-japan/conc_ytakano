@@ -22,7 +22,7 @@ void reentlock_acquire(struct reent_lock *lock, int id) {
     } else {
         // 誰もロックを獲得していないか、
         // 他のスレッドがロック獲得中ならロック獲得
-        spinlock_aqcuire(&lock->lock);
+        spinlock_acquire(&lock->lock);
         // ロックを獲得したら、自身のスレッドIDを設定し、
         // カウントをインクリメント
         lock->id = id;

@@ -1,6 +1,6 @@
 #define NUM 4
 
-void semaphore_aqcuire(volatile int *cnt) { // <1>
+void semaphore_acquire(volatile int *cnt) { // <1>
     for (;;) {
         while (*cnt >= NUM); // <2>
         __sync_fetch_and_add(cnt, 1); // <3>

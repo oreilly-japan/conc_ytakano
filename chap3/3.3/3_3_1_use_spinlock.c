@@ -4,7 +4,7 @@ bool lock = false; // 共有変数
 
 void some_func() {
     for (;;) {
-        spinlock_aqcuire(&lock); // ロック獲得 <1>
+        spinlock_acquire(&lock); // ロック獲得 <1>
         // クリティカルセクション <2>
         spinlock_release(&lock); // ロック解放 <3>
     }

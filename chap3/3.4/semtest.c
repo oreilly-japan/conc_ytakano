@@ -11,7 +11,7 @@ int cnt = 0; // 共有変数
 
 void *th(void *arg) {
     for (int i = 0; i < NUM_LOOP; i++) {
-        semaphore_aqcuire(&cnt);
+        semaphore_acquire(&cnt);
         if (cnt > 4) {
             printf("cnt = %d\n", cnt);
             exit(1);

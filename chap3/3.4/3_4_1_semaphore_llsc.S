@@ -2,17 +2,17 @@
 
     .text
 #ifdef __APPLE__
-    .global _semaphore_aqcuire_llsc
+    .global _semaphore_acquire_llsc
 #else
-    .global semaphore_aqcuire_llsc
+    .global semaphore_acquire_llsc
 #endif
 
     .align 4
 
 #ifdef __APPLE__
-_semaphore_aqcuire_llsc:
+_semaphore_acquire_llsc:
 #else
-semaphore_aqcuire_llsc:
+semaphore_acquire_llsc:
 #endif
 
 .LBB0_1:

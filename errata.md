@@ -21,6 +21,7 @@
 | 2章。P.30。1つ目のソースコードの下から2行目。| `role: Person::Supporter(70)` | `role: Role::Supporter(70)` |
 | 2章。P.30。3段目の1行目。| 初期化しなければならい。 | 初期化しなければならない。 |
 | 2章。P.35。2.3.2.6より1行目。 | RustではCでいうwhileやdo whileはないため、代わりにloop文を用いて実現する。 | loop文は無限ループを行うための構文であり、loop文の他にC言語と同様のwhile文もある。 |
+| 2章。P.36。2.3.2.7のソースコードより2行目。| ただし、&ast;=と、&ast;xと&ast;yにある&ast;は乗算の演算子である。 | ただし、&ast;=と、&ast;xと&ast;yとの間にある&ast;は乗算の演算子である。 |
 | 2章。P.52。2つ目のソースコードの下から2行目。| `spawn(hello).join();` | `spawn(h).join();` |
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |

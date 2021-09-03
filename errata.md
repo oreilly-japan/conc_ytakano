@@ -58,3 +58,17 @@ h.__next__() # 1から再開し2まで実行
 ### s/aqcuire/acquire/
 
 本文やソースコードに複数登場する「aqcuire」は「acquire」のスペルミスとなります。
+
+### P.29のGender表記について
+
+[ISO 5218](https://ja.wikipedia.org/wiki/ISO_5218)によると、ヒトの身体的性別はGenderではなく、Sexするのが正しい表記となります。
+本文中のGenderはSexの誤りとなります。また、enumの定義は、正しくは以下となります。
+
+```rust
+enum Sex {
+    Unknown,
+    Male,
+    Female,
+    NotApplicable
+}
+```

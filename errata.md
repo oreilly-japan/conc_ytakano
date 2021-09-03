@@ -41,6 +41,21 @@
 | 8章。P.296。8.4.1.3より4行目。 | 懸命な読者なら | 賢明な読者なら |
 | 付録B。P.344。1つめのソースコード。 | ebxとecxを足して結果をeaxに保存 | ebxとecxを足して結果をecxに保存 |
 
+
+### 2章。P.29のGender表記について
+
+[ISO 5218](https://ja.wikipedia.org/wiki/ISO_5218)によると、ヒトの身体的性別はGenderではなく、Sexとするのが正しい表記となります。
+本文中のGenderはSexの誤りとなります。また、enumの定義は、正しくは以下となります。
+
+```rust
+enum Sex {
+    Unknown,
+    Male,
+    Female,
+    NotApplicable
+}
+```
+
 ### 5章。P.146。下のソースコード。コメント修正。
 
 ```Python
@@ -59,16 +74,3 @@ h.__next__() # 1から再開し2まで実行
 
 本文やソースコードに複数登場する「aqcuire」は「acquire」のスペルミスとなります。
 
-### P.29のGender表記について
-
-[ISO 5218](https://ja.wikipedia.org/wiki/ISO_5218)によると、ヒトの身体的性別はGenderではなく、Sexとするのが正しい表記となります。
-本文中のGenderはSexの誤りとなります。また、enumの定義は、正しくは以下となります。
-
-```rust
-enum Sex {
-    Unknown,
-    Male,
-    Female,
-    NotApplicable
-}
-```

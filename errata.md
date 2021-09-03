@@ -42,7 +42,7 @@
 | 付録B。P.344。1つめのソースコード。 | ebxとecxを足して結果をeaxに保存 | ebxとecxを足して結果をecxに保存 |
 
 
-### 2章。P.29のGender表記について
+### P.29のGender表記について
 
 [ISO 5218](https://ja.wikipedia.org/wiki/ISO_5218)によると、ヒトの身体的性別はGenderではなく、Sexとするのが正しい表記となります。
 本文中のGenderはSexの誤りとなります。また、enumの定義は、正しくは以下となります。

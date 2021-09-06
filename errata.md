@@ -112,7 +112,7 @@ i番目のスレッドのチケットを保存する配列となります。
 
 ですので、P.102冒頭で定義している`BakerlyLock`構造体には、以下のようなコメントがあるほうがよいでしょう。
 
-```
+```rust
 // パン屋のアルゴリズム用の型 ❹
 struct BakeryLock {
     entering: [bool; NUM_THREADS],       // i番目のスレッドがチケットを取得中であるなら、entering[i]はtrue

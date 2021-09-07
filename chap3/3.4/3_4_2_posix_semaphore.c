@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     // 名前付きセマフォを開く。ない場合は生成
     // 自分とグループが利用可能なセマフォで、
     // クリティカルセクションへ入れるプロセスの上限は3 <7>
-    sem_t *s = sem_open("/mysemaphore", O_CREAT, 0066, 3);
+    sem_t *s = sem_open("/mysemaphore", O_CREAT, 0660, 3);
     if (s == SEM_FAILED) {
         perror("sem_open");
         return 1;

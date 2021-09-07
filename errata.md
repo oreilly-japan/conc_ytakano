@@ -26,6 +26,8 @@
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
 | 3章。P.62。図3-2。 | ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
+| 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
+| 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |
 | 3章。P.79。2つ目のソースコードの❶の行。| `*cnt++;` | `(*cnt)++;` |
 | 3章。P.105。下から9行目。 | チケットを取得か | チケットを取得中か |

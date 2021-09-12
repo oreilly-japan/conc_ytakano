@@ -37,7 +37,7 @@ FizzBuzz: // <7>
     mov    x20, #5
     udiv   x19, x0, x20
     msub   x19, x19, x20, x0
-    cmp    x19, xzr // x0 % 3 == 0
+    cmp    x19, xzr // x0 % 5 == 0
     b.ne   .Lend1
     adr    x1, buzzStr // <9>
     mov    x2, #5   // legth of "Buzz\n"

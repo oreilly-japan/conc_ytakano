@@ -25,8 +25,8 @@
 | 2章。P.36。2.3.2.7のソースコードより2行目。| ただし、&ast;=と、&ast;xと&ast;yにある&ast;は乗算の演算子である。 | ただし、&ast;=と、&ast;xと&ast;yとの間にある&ast;は乗算の演算子である。 |
 | 2章。P.52。2つ目のソースコードの下から2行目。| `spawn(hello).join();` | `spawn(h).join();` |
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
-| 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
 | 3章。P.62。図3-2。 | ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
+| 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
 | 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
 | 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |

@@ -203,7 +203,7 @@ extern "C" fn entry_point() {
         (*ID).remove(&ctx.id);
 
         // 不要なスタック領域として保存
-        // この段階で解放すると、以降のコードでスタックが使えなくなくなる
+        // この段階で解放すると、以降のコードでスタックが使えなくなる
         UNUSED_STACK = ((*ctx).stack, (*ctx).stack_layout); // <2>
 
         match CONTEXTS.front() { // <3>

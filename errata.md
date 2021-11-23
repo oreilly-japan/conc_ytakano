@@ -180,6 +180,18 @@ https://addons.mozilla.org/ja/firefox/addon/epubreader/
 
 # 補足説明
 
+## 3.7.3 実行速度計測の図
+
+3.7.3 実行速度計測の図がモノクロで見難いため、カラー版を掲載いたします。
+
+### 図3-6
+
+<img src="https://raw.githubusercontent.com/oreilly-japan/conc_ytakano/main/figs/fig0306.png" width="600">
+
+### 図3-7
+
+<img src="https://raw.githubusercontent.com/oreilly-japan/conc_ytakano/main/figs/fig0307.png" width="600">
+
 ## 3.9 パン屋のアルゴリズム
 
 パン屋のアルゴリズムの説明が少し足りないので、追加で説明します。

@@ -16,7 +16,7 @@ struct reent_lock {
 // 再帰ロック獲得関数
 void reentlock_acquire(struct reent_lock *lock, int id) {
     // ロック獲得中でかつ自分が獲得中か判定 <2>
-    if (lock->lock && lock->id == id) {
+    if (lock->lock && __atomic_load_n(&lock->id, __ATOMIC_RELAXED) == id) {
         // 自分が獲得中ならカウントをインクリメント
         lock->cnt++;
     } else {
@@ -25,7 +25,7 @@ void reentlock_acquire(struct reent_lock *lock, int id) {
         spinlock_acquire(&lock->lock);
         // ロックを獲得したら、自身のスレッドIDを設定し、
         // カウントをインクリメント
-        lock->id = id;
+        __atomic_store_n(&lock->id, id, __ATOMIC_RELAXED);
         lock->cnt++;
     }
 }
@@ -36,7 +36,7 @@ void reentlock_release(struct reent_lock *lock) {
     // そのカウントが0になったらロック解放 <3>
     lock->cnt--;
     if (lock->cnt == 0) {
-        lock->id = 0;
+        __atomic_store_n(&lock->id, 0, __ATOMIC_RELAXED);
         spinlock_release(&lock->lock);
     }
 }

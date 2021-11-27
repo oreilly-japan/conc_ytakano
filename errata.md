@@ -10,6 +10,7 @@
 |頁    | 誤    | 正   |
 | ---- | ---- | ---- |
 | 2章。P.30。最後の行。| Gender型とほぼ同じあるが | Sex型とほぼ同じであるが |
+| 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 6章。P.190。ソースコード右上の言語指定。 | ASM x86-64 | ASM AArch64 |
 | 6章。P.198。下から3行目。 | `src/context.S` で示されるように | `Registers` 型の値を生成する `new` 関数の定義で示されるように |
 | 7章。P.227。7.2.1から4行目。 | 重要な特徴な | 重要な特徴は |

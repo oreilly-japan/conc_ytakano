@@ -245,3 +245,14 @@ struct BakeryLock {
 修正版をアップロードしました。
 
 パッチを作成して頂いた方および、読書会に参加して頂いた皆様に感謝します。
+
+## 4.4 再帰ロック
+
+再帰ロックのアルゴリズムで、`lock->id`の読み書きをアトミックに行った方が良いと指摘があました。
+AArch64とx86-64でLLVMかGCCを利用していると問題はないとは思われます。
+一方、C言語の規格から考えると、`lock->id`はアトミックとした方が良いとの指摘です。
+
+修正後のソースコードは次のURLから確認してください。
+https://github.com/oreilly-japan/conc_ytakano/blob/main/chap4/4.4/ch4_4_reent_c/reent.c
+
+また、本件に関するissueは次のURLとなります。https://github.com/oreilly-japan/conc_ytakano/issues/61

@@ -10,7 +10,9 @@
 |頁    | 誤    | 正   |
 | ---- | ---- | ---- |
 | 2章。P.30。最後の行。| Gender型とほぼ同じあるが | Sex型とほぼ同じであるが |
+| 3章。P.67。1つ目のソースコード。2行目。 | `test_and_set(lock)` | `!test_and_set(lock)` |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
+| 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 6章。P.190。ソースコード右上の言語指定。 | ASM x86-64 | ASM AArch64 |
 | 6章。P.198。下から3行目。 | `src/context.S` で示されるように | `Registers` 型の値を生成する `new` 関数の定義で示されるように |
 | 7章。P.227。7.2.1から4行目。 | 重要な特徴な | 重要な特徴は |
@@ -42,6 +44,7 @@
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
 | 3章。P.62。図3-2。 | ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
+| 3章。P.67。1つ目のソースコード。2行目。 | `test_and_set(lock)` | `!test_and_set(lock)` |
 | 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
 | 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |
@@ -52,6 +55,8 @@
 | 4章。P.121。中段の1行目。 | Banker 構造体は、Resource 構造体内部に持つのみであり、 | Banker 構造体は、Resource 構造体を内部に持つのみであり、 |
 | 4章。P.122。❶の説明。 | 銀行家の持っている箸の数 | 哲学者の持っている箸の数 |
 | 4章。P.128。4.6 3行目。 | シグナルハンドラが呼び出せる | シグナルハンドラが呼び出される |
+| 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
+| 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 4章。P.132。表4-3。2行目。dmb st。 | この命令以降のメモリ読み書き命令が | この命令以降のメモリ書き込み命令が |
 | 4章。P.133。図4-9。dmb stの図。 | ![dmb_st誤](./figs/dmb_st_old.png) | ![dmb_st正](./figs/dmb_st_new.png) |
 | 4章。P.133。中段の1行目。 | stは先行するメモリ書き込み | stはメモリ書き込みのみ |

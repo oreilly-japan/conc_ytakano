@@ -10,7 +10,6 @@
 |頁    | 誤    | 正   |
 | ---- | ---- | ---- |
 | 2章。P.30。最後の行。| Gender型とほぼ同じあるが | Sex型とほぼ同じであるが |
-| 3章。P.67。1つ目のソースコード。2行目。 | `test_and_set(lock)` | `!test_and_set(lock)` |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 6章。P.190。ソースコード右上の言語指定。 | ASM x86-64 | ASM AArch64 |
@@ -44,7 +43,6 @@
 | 3章。P.59。❹の2行目。| eaxレジスタの下位8ビット | ecxレジスタの下位8ビット |
 | 3章。P.62。図3-2。 | ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
-| 3章。P.67。1つ目のソースコード。2行目。 | `test_and_set(lock)` | `!test_and_set(lock)` |
 | 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
 | 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |

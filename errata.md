@@ -10,6 +10,7 @@
 |頁    | 誤    | 正   |
 | ---- | ---- | ---- |
 | 2章。P.30。最後の行。| Gender型とほぼ同じあるが | Sex型とほぼ同じであるが |
+| 3章。P.65。❷の3行目。 | 代入してして | 代入して |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 6章。P.190。ソースコード右上の言語指定。 | ASM x86-64 | ASM AArch64 |

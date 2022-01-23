@@ -13,6 +13,9 @@
 | 3章。P.65。❷の3行目。 | 代入してして | 代入して |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
+| 5章。P.157。下から7行目。 | `unistd::write,` | `unistd::{read, write},` |
+| 5章。P.158。5.3.2.1の直前。 | 本実装ではこの関数を利用して eventfd に 1 を書き込むことで IOSelector へ通知し、IOSelector は読み込み後に 0 を書き込むことでイベント通知を解除する。 |  本実装ではこの関数を利用して eventfd に 1 を書き込み IOSelector へ通知し、IOSelector は eventfd を読み込みイベント通知を解除する。 |
+| 5章。P.161。| この表の下にある説明を参照してください | |
 | 6章。P.190。ソースコード右上の言語指定。 | ASM x86-64 | ASM AArch64 |
 | 6章。P.198。下から3行目。 | `src/context.S` で示されるように | `Registers` 型の値を生成する `new` 関数の定義で示されるように |
 | 7章。P.227。7.2.1から4行目。 | 重要な特徴な | 重要な特徴は |
@@ -21,6 +24,17 @@
 | 8章。P.294。8.4より4行目。 | 非同期的のπ計算は | 非同期的なπ計算は  |
 | 8章。P.298。3つ目の式中。 | ( P<sub>2</sub>.P.3) | (P<sub>2</sub>.P<sub>3</sub>) |
 | 8章。P.302。真ん中の証明。 | 3. c̅x + 0 | 3. c̅x.0 + 0 |
+
+### 5章。P.161。
+
+以下の2行が追加必要です。
+
+```rust
+let mut buf: [u8; 8] = [0; 8];
+read(self.event, &mut buf).unwrap(); // eventfdの通知解除
+```
+
+https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d1952cb4fa3b7f/chap5/5.3/ch5_3_2_ioselect/src/main.rs#L146-L147
 
 ## 第1刷
 

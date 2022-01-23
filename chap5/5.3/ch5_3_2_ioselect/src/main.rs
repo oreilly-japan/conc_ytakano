@@ -11,7 +11,7 @@ use nix::{
         },
         eventfd::{eventfd, EfdFlags}, // eventfd用のインポート <1>
     },
-    unistd::{write, read},
+    unistd::{read, write},
 };
 use std::{
     collections::{HashMap, VecDeque},
@@ -36,11 +36,6 @@ fn write_eventfd(fd: RawFd, n: usize) {
     };
     // writeシステムコール呼び出し
     write(fd, &val).unwrap();
-}
-
-fn read_eventfd(fd: RawFd) {
-    let mut buf: [u8; 8] = [0; 8];
-    read(fd, &mut buf).unwrap();
 }
 
 enum IOOps {
@@ -143,14 +138,13 @@ impl IOSelector {
                         match op {
                             // 追加
                             IOOps::ADD(flag, fd, waker) =>
-                                self.add_event(flag, fd, waker,
-                                               &mut t),
+                                self.add_event(flag, fd, waker, &mut t),
                             // 削除
-                            IOOps::REMOVE(fd) =>
-                                self.rm_event(fd, &mut t),
+                            IOOps::REMOVE(fd) => self.rm_event(fd, &mut t),
                         }
                     }
-                    read_eventfd(self.event);
+                    let mut buf: [u8; 8] = [0; 8];
+                    read(self.event, &mut buf).unwrap(); // eventfdの通知解除
                 } else {
                     // 実行キューに追加 <13>
                     let data = events[n].data() as i32;

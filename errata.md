@@ -72,6 +72,7 @@ https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d19
 | 4章。P.122。❶の説明。 | 銀行家の持っている箸の数 | 哲学者の持っている箸の数 |
 | 4章。P.127。ソースコード `main` 関数後半。 | `printf("sprious wake up\n");` | `printf("spurious wake up\n");` |
 | 4章。P.128。4.6 3行目。 | シグナルハンドラが呼び出せる | シグナルハンドラが呼び出される |
+| 4章。P.131。❷の説明。 | `SIGNALS` 型を生成 | `Signals` 型を生成 |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 4章。P.132。表4-3。2行目。dmb st。 | この命令以降のメモリ読み書き命令が | この命令以降のメモリ書き込み命令が |

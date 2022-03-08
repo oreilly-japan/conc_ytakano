@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
         perror("pthread_cond_wait");
         exit(1);
     }
-    printf("sprious wake up\n");
+    printf("spurious wake up\n");
     pthread_mutex_unlock(&mutex);
 
     return 0;

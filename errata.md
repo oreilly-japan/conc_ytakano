@@ -11,6 +11,7 @@
 | ---- | ---- | ---- |
 | 2章。P.30。最後の行。| Gender型とほぼ同じあるが | Sex型とほぼ同じであるが |
 | 3章。P.65。❷の3行目。 | 代入してして | 代入して |
+| 3章。P.96。❶。 | ミューテックスと状態変数 | ミューテックスと条件変数 |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
 | 5章。P.157。下から7行目。 | `unistd::write,` | `unistd::{read, write},` |

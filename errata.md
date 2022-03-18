@@ -67,6 +67,7 @@ https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d19
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |
 | 3章。P.79。2つ目のソースコードの❶の行。| `*cnt++;` | `(*cnt)++;` |
 | 3章。P.93。1行目。 | 述語がfalseとなる間待機 | 述語がfalseとなるまで待機 |
+| 3章。P.96。❶。 | ミューテックスと状態変数 | ミューテックスと条件変数 |
 | 3章。P.105。下から9行目。 | チケットを取得か | チケットを取得中か |
 | 3章。P.105。下から6行目。 | 番号は`ticket[i]`で | チケットは`ticket[i]`で |
 | 4章。P.121。中段の1行目。 | Banker 構造体は、Resource 構造体内部に持つのみであり、 | Banker 構造体は、Resource 構造体を内部に持つのみであり、 |

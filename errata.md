@@ -112,6 +112,7 @@ https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d19
 | 8章。P.295。8.4.1.2項名 | 送信 | 受信 |
 | 8章。P.296。8.4.1.3より4行目。 | 懸命な読者なら | 賢明な読者なら |
 | 8章。P.298。3つ目の式中。 | ( P<sub>2</sub>.P.3) | (P<sub>2</sub>.P<sub>3</sub>) |
+| 8章。P.302。上から2行目 | (P \| Q) ≡ P \| (Q \| P) | (P \| Q) \| R ≡ P \| (Q \| R) |
 | 8章。P.302。真ん中の証明。 | 3. c̅x + 0 | 3. c̅x.0 + 0 |
 | 8章。P.308。2行目。 | `Sender<Sender<()>` | `Sender<Sender<()>>` |
 | 付録A。P.321。6、8行目。 | AAarch64 | AArch64 |

@@ -14,6 +14,7 @@
 | 3章。P.96。❶。 | ミューテックスと状態変数 | ミューテックスと条件変数 |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
+| 4章。P.134。表4-5。6行目。 | `SecCst` | `SeqCst` |
 | 5章。P.157。下から7行目。 | `unistd::write,` | `unistd::{read, write},` |
 | 5章。P.158。5.3.2.1の直前。 | 本実装ではこの関数を利用して eventfd に 1 を書き込むことで IOSelector へ通知し、IOSelector は読み込み後に 0 を書き込むことでイベント通知を解除する。 |  本実装ではこの関数を利用して eventfd に 1 を書き込み IOSelector へ通知し、IOSelector は eventfd を読み込みイベント通知を解除する。 |
 | 5章。P.161。| この表の下にある説明を参照してください | |
@@ -82,6 +83,7 @@ https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d19
 | 4章。P.133。図4-9。dmb stの図。 | ![dmb_st誤](./figs/dmb_st_old.png) | ![dmb_st正](./figs/dmb_st_new.png) |
 | 4章。P.133。中段の1行目。 | stは先行するメモリ書き込み | stはメモリ書き込みのみ |
 | 4章。P.133。中段の4行目。 | 一方行 | 一方向 |
+| 4章。P.134。表4-5。6行目。 | `SecCst` | `SeqCst` |
 | 5章。P.139。6行目。 | 再び電話を取る | 電話を取る |
 | 5章。P.139。7行目。 | このように書いてしてしまうと | このように書いてしまうと |
 | 5章。P.144。❸の3行目。 | 発生したイベントの数が Option 型で返る。 | 発生したイベントの数が Result 型で返る。 |

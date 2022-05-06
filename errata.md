@@ -65,6 +65,7 @@ https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d19
 | 3章。P.62。図3-2。 | ![LLSC誤](./figs/llsc_old.png) | ![LLSC正](./figs/llsc_new.png) |
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
 | 3章。P.65。❷の3行目。 | 代入してして | 代入して |
+| 3章。P.67。3.3.1の1行目。 | 繰り返していていたが、 | 繰り返していたが、 |
 | 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
 | 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |

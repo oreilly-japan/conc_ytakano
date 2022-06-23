@@ -15,6 +15,7 @@
 | 3章。P.96。❶。 | ミューテックスと状態変数 | ミューテックスと条件変数 |
 | 4章。P.131。4.7から3行目。 | IPC : instructions per second | IPS : instructions per second |
 | 4章。P.131。4.7から8行目。 | IPC | IPS |
+| 4章。P.132。2文目。 | ロック用命令よりも前に実行さてしまったとすると、 | ロック用命令よりも前に実行されてしまったとすると、 |
 | 4章。P.134。表4-5。6行目。およびページ最終行。 | `SecCst` | `SeqCst` |
 | 5章。P.157。下から7行目。 | `unistd::write,` | `unistd::{read, write},` |
 | 5章。P.158。5.3.2.1の直前。 | 本実装ではこの関数を利用して eventfd に 1 を書き込むことで IOSelector へ通知し、IOSelector は読み込み後に 0 を書き込むことでイベント通知を解除する。 |  本実装ではこの関数を利用して eventfd に 1 を書き込み IOSelector へ通知し、IOSelector は eventfd を読み込みイベント通知を解除する。 |

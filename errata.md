@@ -46,7 +46,7 @@ read(self.event, &mut buf).unwrap(); // eventfdの通知解除
 
 https://github.com/oreilly-japan/conc_ytakano/blob/1d2fcb0c68d1cb7986450c33b8d1952cb4fa3b7f/chap5/5.3/ch5_3_2_ioselect/src/main.rs#L146-L147
 
-### 8章。P.290
+### 8章。P.290。
 
 「アクターモデル」の章の「バリア同期」の式が誤っていました。下記ページに修正版を掲載しています。
 

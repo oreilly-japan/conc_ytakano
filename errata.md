@@ -79,6 +79,7 @@ https://oreilly-japan.github.io/conc_ytakano/barrier.html
 | 3章。P.64。下段の1行目。 | MUTtual EXecution | MUTual EXclusion |
 | 3章。P.65。❷の3行目。 | 代入してして | 代入して |
 | 3章。P.67。3.3.1の1行目。 | 繰り返していていたが、 | 繰り返していたが、 |
+| 3章。P.67。ソースコードの上から2行目 | `while (test_and_set(lock)); // <1>` | `while (!test_and_set(lock)); // <1>` |
 | 3章。P.73。ソースコード。main関数から4行目。 | `sem_open("/mysemaphore", O_CREAT, 0066, 3);` | `sem_open("/mysemaphore", O_CREAT, 0660, 3);` |
 | 3章。P.74。❼の2行目 | 第3引数の0066は | 第3引数の0660 は |
 | 3章。P.78。1つ目のソースコードの上から1行目。| `volatile int num = 10;` | `volatile int num = 0;` |
